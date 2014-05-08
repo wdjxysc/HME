@@ -1,0 +1,36 @@
+
+/* Class = "IBUILabel"; text = "用 户 名："; ObjectID = "2AW-iQ-TIl"; */
+"2AW-iQ-TIl.text" = "用 户 名：";
+
+/* Class = "IBUIButton"; normalTitle = "登录"; ObjectID = "5NY-QM-fzP"; */
+"5NY-QM-fzP.normalTitle" = "登录";
+
+/* Class = "IBUILabel"; text = "血糖"; ObjectID = "7Kw-UR-Uo6"; */
+"7Kw-UR-Uo6.text" = "血糖";
+
+/* Class = "IBUILabel"; text = "血氧"; ObjectID = "DxW-Ek-6t0"; */
+"DxW-Ek-6t0.text" = "血氧";
+
+/* Class = "IBUILabel"; text = "记住密码"; ObjectID = "Lr1-4K-Qtw"; */
+"Lr1-4K-Qtw.text" = "记住密码";
+
+/* Class = "IBUILabel"; text = "血压"; ObjectID = "McT-fy-8Zb"; */
+"McT-fy-8Zb.text" = "血压";
+
+/* Class = "IBUIButton"; normalTitle = "登录"; ObjectID = "WOz-iR-jHu"; */
+"WOz-iR-jHu.normalTitle" = "登录";
+
+/* Class = "IBUILabel"; text = "密      码："; ObjectID = "X3I-aI-ODw"; */
+"X3I-aI-ODw.text" = "密      码：";
+
+/* Class = "IBUILabel"; text = "体重"; ObjectID = "e4T-63-kBt"; */
+"e4T-63-kBt.text" = "体重";
+
+/* Class = "IBUILabel"; text = "体成分"; ObjectID = "kTU-jp-6UJ"; */
+"kTU-jp-6UJ.text" = "体成分";
+
+/* Class = "IBUIButton"; normalTitle = "确      认"; ObjectID = "lsx-Fm-afh"; */
+"lsx-Fm-afh.normalTitle" = "确      认";
+
+/* Class = "IBUIButton"; normalTitle = "注册"; ObjectID = "qF9-GS-UcU"; */
+"qF9-GS-UcU.normalTitle" = "注册";

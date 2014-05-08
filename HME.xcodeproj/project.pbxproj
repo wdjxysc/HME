@@ -1,0 +1,994 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6428906D18618BD80074AEBC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6428906C18618BD80074AEBC /* Foundation.framework */; };
+		6428906F18618BD80074AEBC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6428906E18618BD80074AEBC /* CoreGraphics.framework */; };
+		6428907118618BD80074AEBC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6428907018618BD80074AEBC /* UIKit.framework */; };
+		6428907718618BD80074AEBC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6428907518618BD80074AEBC /* InfoPlist.strings */; };
+		6428907918618BD80074AEBC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6428907818618BD80074AEBC /* main.m */; };
+		6428907D18618BD80074AEBC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6428907C18618BD80074AEBC /* AppDelegate.m */; };
+		6428908318618BD80074AEBC /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6428908118618BD80074AEBC /* Main_iPad.storyboard */; };
+		6428908618618BD80074AEBC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6428908518618BD80074AEBC /* ViewController.m */; };
+		6428908818618BD80074AEBC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6428908718618BD80074AEBC /* Images.xcassets */; };
+		6428908F18618BD80074AEBC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6428908E18618BD80074AEBC /* XCTest.framework */; };
+		6428909018618BD80074AEBC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6428906C18618BD80074AEBC /* Foundation.framework */; };
+		6428909118618BD80074AEBC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6428907018618BD80074AEBC /* UIKit.framework */; };
+		6428909918618BD80074AEBC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6428909718618BD80074AEBC /* InfoPlist.strings */; };
+		6428909B18618BD80074AEBC /* HMETests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6428909A18618BD80074AEBC /* HMETests.m */; };
+		642890A71861A0AB0074AEBC /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 642890A61861A0AB0074AEBC /* LoginViewController.m */; };
+		642890AB1861A2D40074AEBC /* ChooseItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 642890AA1861A2D40074AEBC /* ChooseItemViewController.m */; };
+		642890B91862EEF10074AEBC /* MeasureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 642890B71862EEF10074AEBC /* MeasureViewController.m */; };
+		642890BA1862EEF10074AEBC /* MeasureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 642890B81862EEF10074AEBC /* MeasureViewController.xib */; };
+		642890C11863DBCE0074AEBC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 642890C31863DBCE0074AEBC /* Localizable.strings */; };
+		642890C718642F3A0074AEBC /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 642890C618642F3A0074AEBC /* ExternalAccessory.framework */; };
+		642890CB186439DD0074AEBC /* EADSessionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 642890CA186439DD0074AEBC /* EADSessionController.m */; };
+		6451166D1876997300CA44E2 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6451166A1876997300CA44E2 /* SVProgressHUD.bundle */; };
+		6451166E1876997300CA44E2 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 6451166C1876997300CA44E2 /* SVProgressHUD.m */; };
+		64511680187BD1F000CA44E2 /* GlucoseMeasureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6451167E187BD1F000CA44E2 /* GlucoseMeasureViewController.m */; };
+		64511681187BD1F000CA44E2 /* GlucoseMeasureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6451167F187BD1F000CA44E2 /* GlucoseMeasureViewController.xib */; };
+		64511685187BDD1E00CA44E2 /* GlucoseAnalysisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64511683187BDD1E00CA44E2 /* GlucoseAnalysisViewController.m */; };
+		64511686187BDD1E00CA44E2 /* GlucoseAnalysisViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64511684187BDD1E00CA44E2 /* GlucoseAnalysisViewController.xib */; };
+		64511689187BDEB900CA44E2 /* GlucoseDataCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 64511688187BDEB900CA44E2 /* GlucoseDataCell.m */; };
+		6451168D187BDF7900CA44E2 /* GlucoseDataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6451168C187BDF7900CA44E2 /* GlucoseDataCell.xib */; };
+		64511691187BF57B00CA44E2 /* BodyFatMeasureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6451168F187BF57B00CA44E2 /* BodyFatMeasureViewController.m */; };
+		64511692187BF57B00CA44E2 /* BodyFatMeasureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64511690187BF57B00CA44E2 /* BodyFatMeasureViewController.xib */; };
+		64511696187C017A00CA44E2 /* BodyFatAnalysisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64511694187C017A00CA44E2 /* BodyFatAnalysisViewController.m */; };
+		64511697187C017A00CA44E2 /* BodyFatAnalysisViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64511695187C017A00CA44E2 /* BodyFatAnalysisViewController.xib */; };
+		6451169B187CEE1A00CA44E2 /* BodyfatDataCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 64511699187CEE1A00CA44E2 /* BodyfatDataCell.m */; };
+		6451169C187CEE1A00CA44E2 /* BodyfatDataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6451169A187CEE1A00CA44E2 /* BodyfatDataCell.xib */; };
+		649C2D17186A78DC00797D00 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 649C2D16186A78DC00797D00 /* libsqlite3.dylib */; };
+		649C2D19186A841500797D00 /* ChooseItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 649C2D18186A841500797D00 /* ChooseItemViewController.xib */; };
+		649C2D1C186AC86100797D00 /* database.m in Sources */ = {isa = PBXBuildFile; fileRef = 649C2D1B186AC86100797D00 /* database.m */; };
+		649C2D20186AC8A500797D00 /* MySingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 649C2D1F186AC8A500797D00 /* MySingleton.m */; };
+		649C2D25186ACA0900797D00 /* Regex.m in Sources */ = {isa = PBXBuildFile; fileRef = 649C2D22186ACA0900797D00 /* Regex.m */; };
+		649C2D26186ACA0900797D00 /* ServerConnect.m in Sources */ = {isa = PBXBuildFile; fileRef = 649C2D24186ACA0900797D00 /* ServerConnect.m */; };
+		649C2D2A186BBBDF00797D00 /* AnalysisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 649C2D28186BBBDF00797D00 /* AnalysisViewController.m */; };
+		649C2D2B186BBBDF00797D00 /* AnalysisViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 649C2D29186BBBDF00797D00 /* AnalysisViewController.xib */; };
+		649C2D2E186C001800797D00 /* BloodPressDataCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 649C2D2D186C001800797D00 /* BloodPressDataCell.m */; };
+		649C2D30186C007200797D00 /* BloodPressDataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 649C2D2F186C007200797D00 /* BloodPressDataCell.xib */; };
+		649C2D4B186C262300797D00 /* InnerShadowDrawing.m in Sources */ = {isa = PBXBuildFile; fileRef = 649C2D35186C262300797D00 /* InnerShadowDrawing.m */; };
+		649C2D4C186C262300797D00 /* UIColor+HelperAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 649C2D37186C262300797D00 /* UIColor+HelperAdditions.m */; };
+		649C2D4D186C262300797D00 /* UIImage+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 649C2D39186C262300797D00 /* UIImage+Additions.m */; };
+		649C2D4E186C262300797D00 /* UIKit+DrawingHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 649C2D3B186C262300797D00 /* UIKit+DrawingHelpers.m */; };
+		649C2D4F186C262300797D00 /* FPTuple.m in Sources */ = {isa = PBXBuildFile; fileRef = 649C2D3F186C262300797D00 /* FPTuple.m */; };
+		649C2D50186C262300797D00 /* NSArray+FPAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 649C2D41186C262300797D00 /* NSArray+FPAdditions.m */; };
+		649C2D51186C262300797D00 /* NSDate+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 649C2D44186C262300797D00 /* NSDate+Additions.m */; };
+		649C2D52186C262300797D00 /* LineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 649C2D45186C262300797D00 /* LineChartView.m */; };
+		649C2D53186C262300797D00 /* InfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 649C2D47186C262300797D00 /* InfoView.m */; };
+		649C2D54186C262300797D00 /* LegendView.m in Sources */ = {isa = PBXBuildFile; fileRef = 649C2D49186C262300797D00 /* LegendView.m */; };
+		649C2DA01871691C00797D00 /* XmlTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 649C2D9F1871691C00797D00 /* XmlTool.m */; };
+		649C2DB41872AD0900797D00 /* EoceneServerConnect.m in Sources */ = {isa = PBXBuildFile; fileRef = 649C2DB31872AD0900797D00 /* EoceneServerConnect.m */; };
+		64FFFEFC18A8AB9300949E1E /* BodyfatDataCell_iphone.m in Sources */ = {isa = PBXBuildFile; fileRef = 64FFFEFB18A8AB9300949E1E /* BodyfatDataCell_iphone.m */; };
+		64FFFEFE18A8ABBD00949E1E /* BodyfatDataCell_iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64FFFEFD18A8ABBD00949E1E /* BodyfatDataCell_iphone.xib */; };
+		64FFFF0418A8AEA800949E1E /* ChooseItemViewController_iphone.m in Sources */ = {isa = PBXBuildFile; fileRef = 64FFFF0218A8AEA800949E1E /* ChooseItemViewController_iphone.m */; };
+		64FFFF0518A8AEA800949E1E /* ChooseItemViewController_iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64FFFF0318A8AEA800949E1E /* ChooseItemViewController_iphone.xib */; };
+		64FFFF0718A8CBFF00949E1E /* ViewController_4Inch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64FFFF0618A8CBFF00949E1E /* ViewController_4Inch.xib */; };
+		64FFFF0918A8CD2E00949E1E /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64FFFF0818A8CD2E00949E1E /* ViewController.xib */; };
+		64FFFF1118A8DB3100949E1E /* AnalysisViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64FFFF1018A8DB3100949E1E /* AnalysisViewController-iPad.xib */; };
+		64FFFF1A18A9C5E800949E1E /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64FFFF1818A9C5E800949E1E /* Main_iPhone.storyboard */; };
+		64FFFF1C18A9FEF800949E1E /* ChooseItemViewController_iphone_4Inch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64FFFF1B18A9FEF800949E1E /* ChooseItemViewController_iphone_4Inch.xib */; };
+		64FFFF2018AA011F00949E1E /* BloodPressMeasureViewController_iphone.m in Sources */ = {isa = PBXBuildFile; fileRef = 64FFFF1E18AA011F00949E1E /* BloodPressMeasureViewController_iphone.m */; };
+		64FFFF2118AA011F00949E1E /* BloodPressMeasureViewController_iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64FFFF1F18AA011F00949E1E /* BloodPressMeasureViewController_iphone.xib */; };
+		64FFFF2518AA016200949E1E /* BloodPressAnalysisViewController_iphone.m in Sources */ = {isa = PBXBuildFile; fileRef = 64FFFF2318AA016200949E1E /* BloodPressAnalysisViewController_iphone.m */; };
+		64FFFF2618AA016200949E1E /* BloodPressAnalysisViewController_iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64FFFF2418AA016200949E1E /* BloodPressAnalysisViewController_iphone.xib */; };
+		64FFFF2918AA025200949E1E /* BloodPressDataCell_iphone.m in Sources */ = {isa = PBXBuildFile; fileRef = 64FFFF2818AA025200949E1E /* BloodPressDataCell_iphone.m */; };
+		64FFFF2B18AA04C000949E1E /* BloodPressDataCell_iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64FFFF2A18AA04C000949E1E /* BloodPressDataCell_iphone.xib */; };
+		64FFFF2F18AA099000949E1E /* GlucoseMeasureViewController_iphone.m in Sources */ = {isa = PBXBuildFile; fileRef = 64FFFF2D18AA099000949E1E /* GlucoseMeasureViewController_iphone.m */; };
+		64FFFF3018AA099000949E1E /* GlucoseMeasureViewController_iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64FFFF2E18AA099000949E1E /* GlucoseMeasureViewController_iphone.xib */; };
+		64FFFF3418AA09BB00949E1E /* GlucoseAnalysisViewController_iphone.m in Sources */ = {isa = PBXBuildFile; fileRef = 64FFFF3218AA09BB00949E1E /* GlucoseAnalysisViewController_iphone.m */; };
+		64FFFF3518AA09BB00949E1E /* GlucoseAnalysisViewController_iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64FFFF3318AA09BB00949E1E /* GlucoseAnalysisViewController_iphone.xib */; };
+		64FFFF3818AA09DF00949E1E /* GlucoseDataCell_iphone.m in Sources */ = {isa = PBXBuildFile; fileRef = 64FFFF3718AA09DF00949E1E /* GlucoseDataCell_iphone.m */; };
+		64FFFF3A18AA09EF00949E1E /* GlucoseDataCell_iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64FFFF3918AA09EF00949E1E /* GlucoseDataCell_iphone.xib */; };
+		64FFFF4818AA0BED00949E1E /* BodyFatMeasureViewController_iphone.m in Sources */ = {isa = PBXBuildFile; fileRef = 64FFFF4618AA0BED00949E1E /* BodyFatMeasureViewController_iphone.m */; };
+		64FFFF4918AA0BED00949E1E /* BodyFatMeasureViewController_iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64FFFF4718AA0BED00949E1E /* BodyFatMeasureViewController_iphone.xib */; };
+		64FFFF4D18AA0C1400949E1E /* BodyFatAnalysisViewController_iphone.m in Sources */ = {isa = PBXBuildFile; fileRef = 64FFFF4B18AA0C1400949E1E /* BodyFatAnalysisViewController_iphone.m */; };
+		64FFFF4E18AA0C1400949E1E /* BodyFatAnalysisViewController_iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64FFFF4C18AA0C1400949E1E /* BodyFatAnalysisViewController_iphone.xib */; };
+		64FFFF5018AAFD8B00949E1E /* BloodPressMeasureViewController_iphone_4Inch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64FFFF4F18AAFD8B00949E1E /* BloodPressMeasureViewController_iphone_4Inch.xib */; };
+		64FFFF5218AAFE5500949E1E /* BloodPressAnalysisViewController_iphone_4Inch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64FFFF5118AAFE5500949E1E /* BloodPressAnalysisViewController_iphone_4Inch.xib */; };
+		64FFFF5418AAFF3300949E1E /* GlucoseMeasureViewController_iphone_4Inch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64FFFF5318AAFF3300949E1E /* GlucoseMeasureViewController_iphone_4Inch.xib */; };
+		64FFFF5618AB008500949E1E /* GlucoseAnalysisViewController_iphone_4Inch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64FFFF5518AB008500949E1E /* GlucoseAnalysisViewController_iphone_4Inch.xib */; };
+		64FFFF5818AB02A500949E1E /* BodyFatMeasureViewController_iphone_4Inch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64FFFF5718AB02A500949E1E /* BodyFatMeasureViewController_iphone_4Inch.xib */; };
+		64FFFF5A18AB037E00949E1E /* BodyFatAnalysisViewController_iphone_4Inch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64FFFF5918AB037E00949E1E /* BodyFatAnalysisViewController_iphone_4Inch.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6428909218618BD80074AEBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6428906118618BD80074AEBC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6428906818618BD80074AEBC;
+			remoteInfo = HME;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6428906918618BD80074AEBC /* HME.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HME.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6428906C18618BD80074AEBC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6428906E18618BD80074AEBC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6428907018618BD80074AEBC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6428907418618BD80074AEBC /* HME-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HME-Info.plist"; sourceTree = "<group>"; };
+		6428907618618BD80074AEBC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6428907818618BD80074AEBC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6428907A18618BD80074AEBC /* HME-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HME-Prefix.pch"; sourceTree = "<group>"; };
+		6428907B18618BD80074AEBC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6428907C18618BD80074AEBC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6428908218618BD80074AEBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		6428908418618BD80074AEBC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6428908518618BD80074AEBC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6428908718618BD80074AEBC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6428908D18618BD80074AEBC /* HMETests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HMETests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6428908E18618BD80074AEBC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		6428909618618BD80074AEBC /* HMETests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HMETests-Info.plist"; sourceTree = "<group>"; };
+		6428909818618BD80074AEBC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6428909A18618BD80074AEBC /* HMETests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HMETests.m; sourceTree = "<group>"; };
+		642890A51861A0AB0074AEBC /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		642890A61861A0AB0074AEBC /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		642890A91861A2D40074AEBC /* ChooseItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseItemViewController.h; sourceTree = "<group>"; };
+		642890AA1861A2D40074AEBC /* ChooseItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseItemViewController.m; sourceTree = "<group>"; };
+		642890B61862EEF10074AEBC /* MeasureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeasureViewController.h; sourceTree = "<group>"; };
+		642890B71862EEF10074AEBC /* MeasureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeasureViewController.m; sourceTree = "<group>"; };
+		642890B81862EEF10074AEBC /* MeasureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeasureViewController.xib; sourceTree = "<group>"; };
+		642890BB1863DB260074AEBC /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		642890BD1863DB260074AEBC /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main_iPad.strings"; sourceTree = "<group>"; };
+		642890BE1863DB260074AEBC /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		642890C41863DBD30074AEBC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		642890C51863DBD40074AEBC /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		642890C618642F3A0074AEBC /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		642890C9186439DD0074AEBC /* EADSessionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EADSessionController.h; path = EADSessionController/EADSessionController.h; sourceTree = "<group>"; };
+		642890CA186439DD0074AEBC /* EADSessionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EADSessionController.m; path = EADSessionController/EADSessionController.m; sourceTree = "<group>"; };
+		6451166A1876997300CA44E2 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
+		6451166B1876997300CA44E2 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
+		6451166C1876997300CA44E2 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
+		6451167D187BD1F000CA44E2 /* GlucoseMeasureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlucoseMeasureViewController.h; sourceTree = "<group>"; };
+		6451167E187BD1F000CA44E2 /* GlucoseMeasureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlucoseMeasureViewController.m; sourceTree = "<group>"; };
+		6451167F187BD1F000CA44E2 /* GlucoseMeasureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GlucoseMeasureViewController.xib; sourceTree = "<group>"; };
+		64511682187BDD1E00CA44E2 /* GlucoseAnalysisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlucoseAnalysisViewController.h; sourceTree = "<group>"; };
+		64511683187BDD1E00CA44E2 /* GlucoseAnalysisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlucoseAnalysisViewController.m; sourceTree = "<group>"; };
+		64511684187BDD1E00CA44E2 /* GlucoseAnalysisViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GlucoseAnalysisViewController.xib; sourceTree = "<group>"; };
+		64511687187BDEB900CA44E2 /* GlucoseDataCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlucoseDataCell.h; sourceTree = "<group>"; };
+		64511688187BDEB900CA44E2 /* GlucoseDataCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlucoseDataCell.m; sourceTree = "<group>"; };
+		6451168C187BDF7900CA44E2 /* GlucoseDataCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GlucoseDataCell.xib; sourceTree = "<group>"; };
+		6451168E187BF57B00CA44E2 /* BodyFatMeasureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BodyFatMeasureViewController.h; sourceTree = "<group>"; };
+		6451168F187BF57B00CA44E2 /* BodyFatMeasureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BodyFatMeasureViewController.m; sourceTree = "<group>"; };
+		64511690187BF57B00CA44E2 /* BodyFatMeasureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BodyFatMeasureViewController.xib; sourceTree = "<group>"; };
+		64511693187C017A00CA44E2 /* BodyFatAnalysisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BodyFatAnalysisViewController.h; sourceTree = "<group>"; };
+		64511694187C017A00CA44E2 /* BodyFatAnalysisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BodyFatAnalysisViewController.m; sourceTree = "<group>"; };
+		64511695187C017A00CA44E2 /* BodyFatAnalysisViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BodyFatAnalysisViewController.xib; sourceTree = "<group>"; };
+		64511698187CEE1A00CA44E2 /* BodyfatDataCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BodyfatDataCell.h; sourceTree = "<group>"; };
+		64511699187CEE1A00CA44E2 /* BodyfatDataCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BodyfatDataCell.m; sourceTree = "<group>"; };
+		6451169A187CEE1A00CA44E2 /* BodyfatDataCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BodyfatDataCell.xib; sourceTree = "<group>"; };
+		649C2D16186A78DC00797D00 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		649C2D18186A841500797D00 /* ChooseItemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChooseItemViewController.xib; sourceTree = "<group>"; };
+		649C2D1A186AC86100797D00 /* database.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = database.h; path = dbclass/database.h; sourceTree = "<group>"; };
+		649C2D1B186AC86100797D00 /* database.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = database.m; path = dbclass/database.m; sourceTree = "<group>"; };
+		649C2D1E186AC8A500797D00 /* MySingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MySingleton.h; path = tools/MySingleton.h; sourceTree = "<group>"; };
+		649C2D1F186AC8A500797D00 /* MySingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MySingleton.m; path = tools/MySingleton.m; sourceTree = "<group>"; };
+		649C2D21186ACA0900797D00 /* Regex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Regex.h; path = tools/Regex.h; sourceTree = "<group>"; };
+		649C2D22186ACA0900797D00 /* Regex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Regex.m; path = tools/Regex.m; sourceTree = "<group>"; };
+		649C2D23186ACA0900797D00 /* ServerConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ServerConnect.h; path = tools/ServerConnect.h; sourceTree = "<group>"; };
+		649C2D24186ACA0900797D00 /* ServerConnect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ServerConnect.m; path = tools/ServerConnect.m; sourceTree = "<group>"; };
+		649C2D27186BBBDF00797D00 /* AnalysisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnalysisViewController.h; sourceTree = "<group>"; };
+		649C2D28186BBBDF00797D00 /* AnalysisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnalysisViewController.m; sourceTree = "<group>"; };
+		649C2D29186BBBDF00797D00 /* AnalysisViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnalysisViewController.xib; sourceTree = "<group>"; };
+		649C2D2C186C001800797D00 /* BloodPressDataCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BloodPressDataCell.h; sourceTree = "<group>"; };
+		649C2D2D186C001800797D00 /* BloodPressDataCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BloodPressDataCell.m; sourceTree = "<group>"; };
+		649C2D2F186C007200797D00 /* BloodPressDataCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BloodPressDataCell.xib; sourceTree = "<group>"; };
+		649C2D34186C262300797D00 /* InnerShadowDrawing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InnerShadowDrawing.h; sourceTree = "<group>"; };
+		649C2D35186C262300797D00 /* InnerShadowDrawing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InnerShadowDrawing.m; sourceTree = "<group>"; };
+		649C2D36186C262300797D00 /* UIColor+HelperAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HelperAdditions.h"; sourceTree = "<group>"; };
+		649C2D37186C262300797D00 /* UIColor+HelperAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HelperAdditions.m"; sourceTree = "<group>"; };
+		649C2D38186C262300797D00 /* UIImage+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Additions.h"; sourceTree = "<group>"; };
+		649C2D39186C262300797D00 /* UIImage+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Additions.m"; sourceTree = "<group>"; };
+		649C2D3A186C262300797D00 /* UIKit+DrawingHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIKit+DrawingHelpers.h"; sourceTree = "<group>"; };
+		649C2D3B186C262300797D00 /* UIKit+DrawingHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIKit+DrawingHelpers.m"; sourceTree = "<group>"; };
+		649C2D3E186C262300797D00 /* FPTuple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPTuple.h; sourceTree = "<group>"; };
+		649C2D3F186C262300797D00 /* FPTuple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPTuple.m; sourceTree = "<group>"; };
+		649C2D40186C262300797D00 /* NSArray+FPAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+FPAdditions.h"; sourceTree = "<group>"; };
+		649C2D41186C262300797D00 /* NSArray+FPAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+FPAdditions.m"; sourceTree = "<group>"; };
+		649C2D43186C262300797D00 /* NSDate+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Additions.h"; sourceTree = "<group>"; };
+		649C2D44186C262300797D00 /* NSDate+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Additions.m"; sourceTree = "<group>"; };
+		649C2D45186C262300797D00 /* LineChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LineChartView.m; path = Chart/LineChartView.m; sourceTree = "<group>"; };
+		649C2D46186C262300797D00 /* InfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InfoView.h; path = Chart/InfoView.h; sourceTree = "<group>"; };
+		649C2D47186C262300797D00 /* InfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InfoView.m; path = Chart/InfoView.m; sourceTree = "<group>"; };
+		649C2D48186C262300797D00 /* LegendView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LegendView.h; path = Chart/LegendView.h; sourceTree = "<group>"; };
+		649C2D49186C262300797D00 /* LegendView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LegendView.m; path = Chart/LegendView.m; sourceTree = "<group>"; };
+		649C2D4A186C262300797D00 /* LineChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LineChartView.h; path = Chart/LineChartView.h; sourceTree = "<group>"; };
+		649C2D9E1871691C00797D00 /* XmlTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XmlTool.h; sourceTree = "<group>"; };
+		649C2D9F1871691C00797D00 /* XmlTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XmlTool.m; sourceTree = "<group>"; };
+		649C2DB21872AD0900797D00 /* EoceneServerConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EoceneServerConnect.h; path = tools/EoceneServerConnect.h; sourceTree = "<group>"; };
+		649C2DB31872AD0900797D00 /* EoceneServerConnect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EoceneServerConnect.m; path = tools/EoceneServerConnect.m; sourceTree = "<group>"; };
+		64FFFEFA18A8AB9300949E1E /* BodyfatDataCell_iphone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BodyfatDataCell_iphone.h; path = view_iphone/BodyfatDataCell_iphone.h; sourceTree = "<group>"; };
+		64FFFEFB18A8AB9300949E1E /* BodyfatDataCell_iphone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BodyfatDataCell_iphone.m; path = view_iphone/BodyfatDataCell_iphone.m; sourceTree = "<group>"; };
+		64FFFEFD18A8ABBD00949E1E /* BodyfatDataCell_iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BodyfatDataCell_iphone.xib; path = view_iphone/BodyfatDataCell_iphone.xib; sourceTree = "<group>"; };
+		64FFFF0118A8AEA800949E1E /* ChooseItemViewController_iphone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChooseItemViewController_iphone.h; path = view_iphone/ChooseItemViewController_iphone.h; sourceTree = "<group>"; };
+		64FFFF0218A8AEA800949E1E /* ChooseItemViewController_iphone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChooseItemViewController_iphone.m; path = view_iphone/ChooseItemViewController_iphone.m; sourceTree = "<group>"; };
+		64FFFF0318A8AEA800949E1E /* ChooseItemViewController_iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ChooseItemViewController_iphone.xib; path = view_iphone/ChooseItemViewController_iphone.xib; sourceTree = "<group>"; };
+		64FFFF0618A8CBFF00949E1E /* ViewController_4Inch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ViewController_4Inch.xib; path = view_iphone/ViewController_4Inch.xib; sourceTree = "<group>"; };
+		64FFFF0818A8CD2E00949E1E /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ViewController.xib; path = view_iphone/ViewController.xib; sourceTree = "<group>"; };
+		64FFFF1018A8DB3100949E1E /* AnalysisViewController-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "AnalysisViewController-iPad.xib"; path = "iPad/AnalysisViewController-iPad.xib"; sourceTree = "<group>"; };
+		64FFFF1918A9C5E800949E1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		64FFFF1B18A9FEF800949E1E /* ChooseItemViewController_iphone_4Inch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ChooseItemViewController_iphone_4Inch.xib; path = view_iphone/ChooseItemViewController_iphone_4Inch.xib; sourceTree = "<group>"; };
+		64FFFF1D18AA011F00949E1E /* BloodPressMeasureViewController_iphone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BloodPressMeasureViewController_iphone.h; path = view_iphone/BloodPressMeasureViewController_iphone.h; sourceTree = "<group>"; };
+		64FFFF1E18AA011F00949E1E /* BloodPressMeasureViewController_iphone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BloodPressMeasureViewController_iphone.m; path = view_iphone/BloodPressMeasureViewController_iphone.m; sourceTree = "<group>"; };
+		64FFFF1F18AA011F00949E1E /* BloodPressMeasureViewController_iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BloodPressMeasureViewController_iphone.xib; path = view_iphone/BloodPressMeasureViewController_iphone.xib; sourceTree = "<group>"; };
+		64FFFF2218AA016200949E1E /* BloodPressAnalysisViewController_iphone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BloodPressAnalysisViewController_iphone.h; path = view_iphone/BloodPressAnalysisViewController_iphone.h; sourceTree = "<group>"; };
+		64FFFF2318AA016200949E1E /* BloodPressAnalysisViewController_iphone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BloodPressAnalysisViewController_iphone.m; path = view_iphone/BloodPressAnalysisViewController_iphone.m; sourceTree = "<group>"; };
+		64FFFF2418AA016200949E1E /* BloodPressAnalysisViewController_iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BloodPressAnalysisViewController_iphone.xib; path = view_iphone/BloodPressAnalysisViewController_iphone.xib; sourceTree = "<group>"; };
+		64FFFF2718AA025200949E1E /* BloodPressDataCell_iphone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BloodPressDataCell_iphone.h; path = view_iphone/BloodPressDataCell_iphone.h; sourceTree = "<group>"; };
+		64FFFF2818AA025200949E1E /* BloodPressDataCell_iphone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BloodPressDataCell_iphone.m; path = view_iphone/BloodPressDataCell_iphone.m; sourceTree = "<group>"; };
+		64FFFF2A18AA04C000949E1E /* BloodPressDataCell_iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BloodPressDataCell_iphone.xib; path = view_iphone/BloodPressDataCell_iphone.xib; sourceTree = "<group>"; };
+		64FFFF2C18AA099000949E1E /* GlucoseMeasureViewController_iphone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GlucoseMeasureViewController_iphone.h; path = view_iphone/GlucoseMeasureViewController_iphone.h; sourceTree = "<group>"; };
+		64FFFF2D18AA099000949E1E /* GlucoseMeasureViewController_iphone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GlucoseMeasureViewController_iphone.m; path = view_iphone/GlucoseMeasureViewController_iphone.m; sourceTree = "<group>"; };
+		64FFFF2E18AA099000949E1E /* GlucoseMeasureViewController_iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GlucoseMeasureViewController_iphone.xib; path = view_iphone/GlucoseMeasureViewController_iphone.xib; sourceTree = "<group>"; };
+		64FFFF3118AA09BB00949E1E /* GlucoseAnalysisViewController_iphone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GlucoseAnalysisViewController_iphone.h; path = view_iphone/GlucoseAnalysisViewController_iphone.h; sourceTree = "<group>"; };
+		64FFFF3218AA09BB00949E1E /* GlucoseAnalysisViewController_iphone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GlucoseAnalysisViewController_iphone.m; path = view_iphone/GlucoseAnalysisViewController_iphone.m; sourceTree = "<group>"; };
+		64FFFF3318AA09BB00949E1E /* GlucoseAnalysisViewController_iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GlucoseAnalysisViewController_iphone.xib; path = view_iphone/GlucoseAnalysisViewController_iphone.xib; sourceTree = "<group>"; };
+		64FFFF3618AA09DF00949E1E /* GlucoseDataCell_iphone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GlucoseDataCell_iphone.h; path = view_iphone/GlucoseDataCell_iphone.h; sourceTree = "<group>"; };
+		64FFFF3718AA09DF00949E1E /* GlucoseDataCell_iphone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GlucoseDataCell_iphone.m; path = view_iphone/GlucoseDataCell_iphone.m; sourceTree = "<group>"; };
+		64FFFF3918AA09EF00949E1E /* GlucoseDataCell_iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GlucoseDataCell_iphone.xib; path = view_iphone/GlucoseDataCell_iphone.xib; sourceTree = "<group>"; };
+		64FFFF4518AA0BED00949E1E /* BodyFatMeasureViewController_iphone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BodyFatMeasureViewController_iphone.h; path = view_iphone/BodyFatMeasureViewController_iphone.h; sourceTree = "<group>"; };
+		64FFFF4618AA0BED00949E1E /* BodyFatMeasureViewController_iphone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BodyFatMeasureViewController_iphone.m; path = view_iphone/BodyFatMeasureViewController_iphone.m; sourceTree = "<group>"; };
+		64FFFF4718AA0BED00949E1E /* BodyFatMeasureViewController_iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BodyFatMeasureViewController_iphone.xib; path = view_iphone/BodyFatMeasureViewController_iphone.xib; sourceTree = "<group>"; };
+		64FFFF4A18AA0C1400949E1E /* BodyFatAnalysisViewController_iphone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BodyFatAnalysisViewController_iphone.h; path = view_iphone/BodyFatAnalysisViewController_iphone.h; sourceTree = "<group>"; };
+		64FFFF4B18AA0C1400949E1E /* BodyFatAnalysisViewController_iphone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BodyFatAnalysisViewController_iphone.m; path = view_iphone/BodyFatAnalysisViewController_iphone.m; sourceTree = "<group>"; };
+		64FFFF4C18AA0C1400949E1E /* BodyFatAnalysisViewController_iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BodyFatAnalysisViewController_iphone.xib; path = view_iphone/BodyFatAnalysisViewController_iphone.xib; sourceTree = "<group>"; };
+		64FFFF4F18AAFD8B00949E1E /* BloodPressMeasureViewController_iphone_4Inch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BloodPressMeasureViewController_iphone_4Inch.xib; path = view_iphone/BloodPressMeasureViewController_iphone_4Inch.xib; sourceTree = "<group>"; };
+		64FFFF5118AAFE5500949E1E /* BloodPressAnalysisViewController_iphone_4Inch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BloodPressAnalysisViewController_iphone_4Inch.xib; path = view_iphone/BloodPressAnalysisViewController_iphone_4Inch.xib; sourceTree = "<group>"; };
+		64FFFF5318AAFF3300949E1E /* GlucoseMeasureViewController_iphone_4Inch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GlucoseMeasureViewController_iphone_4Inch.xib; path = view_iphone/GlucoseMeasureViewController_iphone_4Inch.xib; sourceTree = "<group>"; };
+		64FFFF5518AB008500949E1E /* GlucoseAnalysisViewController_iphone_4Inch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GlucoseAnalysisViewController_iphone_4Inch.xib; path = view_iphone/GlucoseAnalysisViewController_iphone_4Inch.xib; sourceTree = "<group>"; };
+		64FFFF5718AB02A500949E1E /* BodyFatMeasureViewController_iphone_4Inch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BodyFatMeasureViewController_iphone_4Inch.xib; path = view_iphone/BodyFatMeasureViewController_iphone_4Inch.xib; sourceTree = "<group>"; };
+		64FFFF5918AB037E00949E1E /* BodyFatAnalysisViewController_iphone_4Inch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BodyFatAnalysisViewController_iphone_4Inch.xib; path = view_iphone/BodyFatAnalysisViewController_iphone_4Inch.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6428906618618BD80074AEBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				649C2D17186A78DC00797D00 /* libsqlite3.dylib in Frameworks */,
+				642890C718642F3A0074AEBC /* ExternalAccessory.framework in Frameworks */,
+				6428906F18618BD80074AEBC /* CoreGraphics.framework in Frameworks */,
+				6428907118618BD80074AEBC /* UIKit.framework in Frameworks */,
+				6428906D18618BD80074AEBC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6428908A18618BD80074AEBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6428908F18618BD80074AEBC /* XCTest.framework in Frameworks */,
+				6428909118618BD80074AEBC /* UIKit.framework in Frameworks */,
+				6428909018618BD80074AEBC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6428906018618BD80074AEBC = {
+			isa = PBXGroup;
+			children = (
+				6428907218618BD80074AEBC /* HME */,
+				6428909418618BD80074AEBC /* HMETests */,
+				6428906B18618BD80074AEBC /* Frameworks */,
+				6428906A18618BD80074AEBC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6428906A18618BD80074AEBC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6428906918618BD80074AEBC /* HME.app */,
+				6428908D18618BD80074AEBC /* HMETests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6428906B18618BD80074AEBC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				649C2D16186A78DC00797D00 /* libsqlite3.dylib */,
+				642890C618642F3A0074AEBC /* ExternalAccessory.framework */,
+				6428906C18618BD80074AEBC /* Foundation.framework */,
+				6428906E18618BD80074AEBC /* CoreGraphics.framework */,
+				6428907018618BD80074AEBC /* UIKit.framework */,
+				6428908E18618BD80074AEBC /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6428907218618BD80074AEBC /* HME */ = {
+			isa = PBXGroup;
+			children = (
+				64FFFF0F18A8DB3000949E1E /* iPad */,
+				645116691876996000CA44E2 /* SVProgressHUD */,
+				649C2D31186C24F600797D00 /* Chart */,
+				649C2D1D186AC86700797D00 /* tools */,
+				649C2D12186A72EB00797D00 /* dbclass */,
+				642890C8186439BE0074AEBC /* EADSessionController */,
+				642890CC1864457D0074AEBC /* view_iphone */,
+				642890A41861A0810074AEBC /* view_ipad */,
+				6428907B18618BD80074AEBC /* AppDelegate.h */,
+				6428907C18618BD80074AEBC /* AppDelegate.m */,
+				64FFFF1818A9C5E800949E1E /* Main_iPhone.storyboard */,
+				6428908118618BD80074AEBC /* Main_iPad.storyboard */,
+				6428908718618BD80074AEBC /* Images.xcassets */,
+				6428907318618BD80074AEBC /* Supporting Files */,
+			);
+			path = HME;
+			sourceTree = "<group>";
+		};
+		6428907318618BD80074AEBC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6428907418618BD80074AEBC /* HME-Info.plist */,
+				6428907518618BD80074AEBC /* InfoPlist.strings */,
+				6428907818618BD80074AEBC /* main.m */,
+				6428907A18618BD80074AEBC /* HME-Prefix.pch */,
+				642890C31863DBCE0074AEBC /* Localizable.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6428909418618BD80074AEBC /* HMETests */ = {
+			isa = PBXGroup;
+			children = (
+				6428909A18618BD80074AEBC /* HMETests.m */,
+				6428909518618BD80074AEBC /* Supporting Files */,
+			);
+			path = HMETests;
+			sourceTree = "<group>";
+		};
+		6428909518618BD80074AEBC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6428909618618BD80074AEBC /* HMETests-Info.plist */,
+				6428909718618BD80074AEBC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		642890A41861A0810074AEBC /* view_ipad */ = {
+			isa = PBXGroup;
+			children = (
+				64511698187CEE1A00CA44E2 /* BodyfatDataCell.h */,
+				64511699187CEE1A00CA44E2 /* BodyfatDataCell.m */,
+				6451169A187CEE1A00CA44E2 /* BodyfatDataCell.xib */,
+				642890A51861A0AB0074AEBC /* LoginViewController.h */,
+				642890A61861A0AB0074AEBC /* LoginViewController.m */,
+				642890A91861A2D40074AEBC /* ChooseItemViewController.h */,
+				642890AA1861A2D40074AEBC /* ChooseItemViewController.m */,
+				649C2D18186A841500797D00 /* ChooseItemViewController.xib */,
+				642890B61862EEF10074AEBC /* MeasureViewController.h */,
+				642890B71862EEF10074AEBC /* MeasureViewController.m */,
+				642890B81862EEF10074AEBC /* MeasureViewController.xib */,
+				649C2D27186BBBDF00797D00 /* AnalysisViewController.h */,
+				649C2D28186BBBDF00797D00 /* AnalysisViewController.m */,
+				649C2D29186BBBDF00797D00 /* AnalysisViewController.xib */,
+				649C2D2C186C001800797D00 /* BloodPressDataCell.h */,
+				649C2D2D186C001800797D00 /* BloodPressDataCell.m */,
+				649C2D2F186C007200797D00 /* BloodPressDataCell.xib */,
+				6451167D187BD1F000CA44E2 /* GlucoseMeasureViewController.h */,
+				6451167E187BD1F000CA44E2 /* GlucoseMeasureViewController.m */,
+				6451167F187BD1F000CA44E2 /* GlucoseMeasureViewController.xib */,
+				64511682187BDD1E00CA44E2 /* GlucoseAnalysisViewController.h */,
+				64511683187BDD1E00CA44E2 /* GlucoseAnalysisViewController.m */,
+				64511684187BDD1E00CA44E2 /* GlucoseAnalysisViewController.xib */,
+				64511687187BDEB900CA44E2 /* GlucoseDataCell.h */,
+				64511688187BDEB900CA44E2 /* GlucoseDataCell.m */,
+				6451168C187BDF7900CA44E2 /* GlucoseDataCell.xib */,
+				6451168E187BF57B00CA44E2 /* BodyFatMeasureViewController.h */,
+				6451168F187BF57B00CA44E2 /* BodyFatMeasureViewController.m */,
+				64511690187BF57B00CA44E2 /* BodyFatMeasureViewController.xib */,
+				64511693187C017A00CA44E2 /* BodyFatAnalysisViewController.h */,
+				64511694187C017A00CA44E2 /* BodyFatAnalysisViewController.m */,
+				64511695187C017A00CA44E2 /* BodyFatAnalysisViewController.xib */,
+			);
+			name = view_ipad;
+			sourceTree = "<group>";
+		};
+		642890C8186439BE0074AEBC /* EADSessionController */ = {
+			isa = PBXGroup;
+			children = (
+				642890C9186439DD0074AEBC /* EADSessionController.h */,
+				642890CA186439DD0074AEBC /* EADSessionController.m */,
+			);
+			name = EADSessionController;
+			sourceTree = "<group>";
+		};
+		642890CC1864457D0074AEBC /* view_iphone */ = {
+			isa = PBXGroup;
+			children = (
+				6428908418618BD80074AEBC /* ViewController.h */,
+				6428908518618BD80074AEBC /* ViewController.m */,
+				64FFFF0818A8CD2E00949E1E /* ViewController.xib */,
+				64FFFF0618A8CBFF00949E1E /* ViewController_4Inch.xib */,
+				64FFFEFA18A8AB9300949E1E /* BodyfatDataCell_iphone.h */,
+				64FFFEFB18A8AB9300949E1E /* BodyfatDataCell_iphone.m */,
+				64FFFEFD18A8ABBD00949E1E /* BodyfatDataCell_iphone.xib */,
+				64FFFF0118A8AEA800949E1E /* ChooseItemViewController_iphone.h */,
+				64FFFF0218A8AEA800949E1E /* ChooseItemViewController_iphone.m */,
+				64FFFF0318A8AEA800949E1E /* ChooseItemViewController_iphone.xib */,
+				64FFFF1B18A9FEF800949E1E /* ChooseItemViewController_iphone_4Inch.xib */,
+				64FFFF1D18AA011F00949E1E /* BloodPressMeasureViewController_iphone.h */,
+				64FFFF1E18AA011F00949E1E /* BloodPressMeasureViewController_iphone.m */,
+				64FFFF1F18AA011F00949E1E /* BloodPressMeasureViewController_iphone.xib */,
+				64FFFF4F18AAFD8B00949E1E /* BloodPressMeasureViewController_iphone_4Inch.xib */,
+				64FFFF2218AA016200949E1E /* BloodPressAnalysisViewController_iphone.h */,
+				64FFFF2318AA016200949E1E /* BloodPressAnalysisViewController_iphone.m */,
+				64FFFF2418AA016200949E1E /* BloodPressAnalysisViewController_iphone.xib */,
+				64FFFF5118AAFE5500949E1E /* BloodPressAnalysisViewController_iphone_4Inch.xib */,
+				64FFFF2718AA025200949E1E /* BloodPressDataCell_iphone.h */,
+				64FFFF2818AA025200949E1E /* BloodPressDataCell_iphone.m */,
+				64FFFF2A18AA04C000949E1E /* BloodPressDataCell_iphone.xib */,
+				64FFFF2C18AA099000949E1E /* GlucoseMeasureViewController_iphone.h */,
+				64FFFF2D18AA099000949E1E /* GlucoseMeasureViewController_iphone.m */,
+				64FFFF2E18AA099000949E1E /* GlucoseMeasureViewController_iphone.xib */,
+				64FFFF5318AAFF3300949E1E /* GlucoseMeasureViewController_iphone_4Inch.xib */,
+				64FFFF3118AA09BB00949E1E /* GlucoseAnalysisViewController_iphone.h */,
+				64FFFF3218AA09BB00949E1E /* GlucoseAnalysisViewController_iphone.m */,
+				64FFFF3318AA09BB00949E1E /* GlucoseAnalysisViewController_iphone.xib */,
+				64FFFF5518AB008500949E1E /* GlucoseAnalysisViewController_iphone_4Inch.xib */,
+				64FFFF3618AA09DF00949E1E /* GlucoseDataCell_iphone.h */,
+				64FFFF3718AA09DF00949E1E /* GlucoseDataCell_iphone.m */,
+				64FFFF3918AA09EF00949E1E /* GlucoseDataCell_iphone.xib */,
+				64FFFF4518AA0BED00949E1E /* BodyFatMeasureViewController_iphone.h */,
+				64FFFF4618AA0BED00949E1E /* BodyFatMeasureViewController_iphone.m */,
+				64FFFF4718AA0BED00949E1E /* BodyFatMeasureViewController_iphone.xib */,
+				64FFFF5718AB02A500949E1E /* BodyFatMeasureViewController_iphone_4Inch.xib */,
+				64FFFF4A18AA0C1400949E1E /* BodyFatAnalysisViewController_iphone.h */,
+				64FFFF4B18AA0C1400949E1E /* BodyFatAnalysisViewController_iphone.m */,
+				64FFFF4C18AA0C1400949E1E /* BodyFatAnalysisViewController_iphone.xib */,
+				64FFFF5918AB037E00949E1E /* BodyFatAnalysisViewController_iphone_4Inch.xib */,
+			);
+			name = view_iphone;
+			sourceTree = "<group>";
+		};
+		645116691876996000CA44E2 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				6451166A1876997300CA44E2 /* SVProgressHUD.bundle */,
+				6451166B1876997300CA44E2 /* SVProgressHUD.h */,
+				6451166C1876997300CA44E2 /* SVProgressHUD.m */,
+			);
+			name = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		649C2D12186A72EB00797D00 /* dbclass */ = {
+			isa = PBXGroup;
+			children = (
+				649C2D1A186AC86100797D00 /* database.h */,
+				649C2D1B186AC86100797D00 /* database.m */,
+			);
+			name = dbclass;
+			sourceTree = "<group>";
+		};
+		649C2D1D186AC86700797D00 /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				649C2D21186ACA0900797D00 /* Regex.h */,
+				649C2D22186ACA0900797D00 /* Regex.m */,
+				649C2D23186ACA0900797D00 /* ServerConnect.h */,
+				649C2D24186ACA0900797D00 /* ServerConnect.m */,
+				649C2D1E186AC8A500797D00 /* MySingleton.h */,
+				649C2D1F186AC8A500797D00 /* MySingleton.m */,
+				649C2D9E1871691C00797D00 /* XmlTool.h */,
+				649C2D9F1871691C00797D00 /* XmlTool.m */,
+				649C2DB21872AD0900797D00 /* EoceneServerConnect.h */,
+				649C2DB31872AD0900797D00 /* EoceneServerConnect.m */,
+			);
+			name = tools;
+			sourceTree = "<group>";
+		};
+		649C2D31186C24F600797D00 /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				649C2D32186C262300797D00 /* UIKit-Drawing */,
+				649C2D3C186C262300797D00 /* objc-utils */,
+				649C2D42186C262300797D00 /* NSDate+Additions */,
+				649C2D45186C262300797D00 /* LineChartView.m */,
+				649C2D46186C262300797D00 /* InfoView.h */,
+				649C2D47186C262300797D00 /* InfoView.m */,
+				649C2D48186C262300797D00 /* LegendView.h */,
+				649C2D49186C262300797D00 /* LegendView.m */,
+				649C2D4A186C262300797D00 /* LineChartView.h */,
+			);
+			name = Chart;
+			sourceTree = "<group>";
+		};
+		649C2D32186C262300797D00 /* UIKit-Drawing */ = {
+			isa = PBXGroup;
+			children = (
+				649C2D33186C262300797D00 /* Drawing */,
+			);
+			name = "UIKit-Drawing";
+			path = "Chart/UIKit-Drawing";
+			sourceTree = "<group>";
+		};
+		649C2D33186C262300797D00 /* Drawing */ = {
+			isa = PBXGroup;
+			children = (
+				649C2D34186C262300797D00 /* InnerShadowDrawing.h */,
+				649C2D35186C262300797D00 /* InnerShadowDrawing.m */,
+				649C2D36186C262300797D00 /* UIColor+HelperAdditions.h */,
+				649C2D37186C262300797D00 /* UIColor+HelperAdditions.m */,
+				649C2D38186C262300797D00 /* UIImage+Additions.h */,
+				649C2D39186C262300797D00 /* UIImage+Additions.m */,
+				649C2D3A186C262300797D00 /* UIKit+DrawingHelpers.h */,
+				649C2D3B186C262300797D00 /* UIKit+DrawingHelpers.m */,
+			);
+			path = Drawing;
+			sourceTree = "<group>";
+		};
+		649C2D3C186C262300797D00 /* objc-utils */ = {
+			isa = PBXGroup;
+			children = (
+				649C2D3D186C262300797D00 /* NSArray */,
+			);
+			name = "objc-utils";
+			path = "Chart/objc-utils";
+			sourceTree = "<group>";
+		};
+		649C2D3D186C262300797D00 /* NSArray */ = {
+			isa = PBXGroup;
+			children = (
+				649C2D3E186C262300797D00 /* FPTuple.h */,
+				649C2D3F186C262300797D00 /* FPTuple.m */,
+				649C2D40186C262300797D00 /* NSArray+FPAdditions.h */,
+				649C2D41186C262300797D00 /* NSArray+FPAdditions.m */,
+			);
+			path = NSArray;
+			sourceTree = "<group>";
+		};
+		649C2D42186C262300797D00 /* NSDate+Additions */ = {
+			isa = PBXGroup;
+			children = (
+				649C2D43186C262300797D00 /* NSDate+Additions.h */,
+				649C2D44186C262300797D00 /* NSDate+Additions.m */,
+			);
+			name = "NSDate+Additions";
+			path = "Chart/NSDate+Additions";
+			sourceTree = "<group>";
+		};
+		64FFFF0F18A8DB3000949E1E /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				64FFFF1018A8DB3100949E1E /* AnalysisViewController-iPad.xib */,
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6428906818618BD80074AEBC /* HME */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6428909E18618BD80074AEBC /* Build configuration list for PBXNativeTarget "HME" */;
+			buildPhases = (
+				6428906518618BD80074AEBC /* Sources */,
+				6428906618618BD80074AEBC /* Frameworks */,
+				6428906718618BD80074AEBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HME;
+			productName = HME;
+			productReference = 6428906918618BD80074AEBC /* HME.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6428908C18618BD80074AEBC /* HMETests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 642890A118618BD80074AEBC /* Build configuration list for PBXNativeTarget "HMETests" */;
+			buildPhases = (
+				6428908918618BD80074AEBC /* Sources */,
+				6428908A18618BD80074AEBC /* Frameworks */,
+				6428908B18618BD80074AEBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6428909318618BD80074AEBC /* PBXTargetDependency */,
+			);
+			name = HMETests;
+			productName = HMETests;
+			productReference = 6428908D18618BD80074AEBC /* HMETests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6428906118618BD80074AEBC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "夏 伟";
+				TargetAttributes = {
+					6428908C18618BD80074AEBC = {
+						TestTargetID = 6428906818618BD80074AEBC;
+					};
+				};
+			};
+			buildConfigurationList = 6428906418618BD80074AEBC /* Build configuration list for PBXProject "HME" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 6428906018618BD80074AEBC;
+			productRefGroup = 6428906A18618BD80074AEBC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6428906818618BD80074AEBC /* HME */,
+				6428908C18618BD80074AEBC /* HMETests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6428906718618BD80074AEBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64FFFF3A18AA09EF00949E1E /* GlucoseDataCell_iphone.xib in Resources */,
+				64FFFF4E18AA0C1400949E1E /* BodyFatAnalysisViewController_iphone.xib in Resources */,
+				64FFFF1C18A9FEF800949E1E /* ChooseItemViewController_iphone_4Inch.xib in Resources */,
+				649C2D19186A841500797D00 /* ChooseItemViewController.xib in Resources */,
+				64FFFF5A18AB037E00949E1E /* BodyFatAnalysisViewController_iphone_4Inch.xib in Resources */,
+				642890BA1862EEF10074AEBC /* MeasureViewController.xib in Resources */,
+				64FFFF1118A8DB3100949E1E /* AnalysisViewController-iPad.xib in Resources */,
+				642890C11863DBCE0074AEBC /* Localizable.strings in Resources */,
+				64511681187BD1F000CA44E2 /* GlucoseMeasureViewController.xib in Resources */,
+				64FFFF5618AB008500949E1E /* GlucoseAnalysisViewController_iphone_4Inch.xib in Resources */,
+				64FFFF1A18A9C5E800949E1E /* Main_iPhone.storyboard in Resources */,
+				6428908318618BD80074AEBC /* Main_iPad.storyboard in Resources */,
+				6451168D187BDF7900CA44E2 /* GlucoseDataCell.xib in Resources */,
+				64511686187BDD1E00CA44E2 /* GlucoseAnalysisViewController.xib in Resources */,
+				6451169C187CEE1A00CA44E2 /* BodyfatDataCell.xib in Resources */,
+				64FFFF2B18AA04C000949E1E /* BloodPressDataCell_iphone.xib in Resources */,
+				64FFFEFE18A8ABBD00949E1E /* BodyfatDataCell_iphone.xib in Resources */,
+				649C2D30186C007200797D00 /* BloodPressDataCell.xib in Resources */,
+				6451166D1876997300CA44E2 /* SVProgressHUD.bundle in Resources */,
+				64FFFF5018AAFD8B00949E1E /* BloodPressMeasureViewController_iphone_4Inch.xib in Resources */,
+				64FFFF3018AA099000949E1E /* GlucoseMeasureViewController_iphone.xib in Resources */,
+				64511697187C017A00CA44E2 /* BodyFatAnalysisViewController.xib in Resources */,
+				64FFFF5818AB02A500949E1E /* BodyFatMeasureViewController_iphone_4Inch.xib in Resources */,
+				64FFFF5218AAFE5500949E1E /* BloodPressAnalysisViewController_iphone_4Inch.xib in Resources */,
+				64FFFF0718A8CBFF00949E1E /* ViewController_4Inch.xib in Resources */,
+				64FFFF5418AAFF3300949E1E /* GlucoseMeasureViewController_iphone_4Inch.xib in Resources */,
+				64FFFF3518AA09BB00949E1E /* GlucoseAnalysisViewController_iphone.xib in Resources */,
+				6428908818618BD80074AEBC /* Images.xcassets in Resources */,
+				64FFFF2118AA011F00949E1E /* BloodPressMeasureViewController_iphone.xib in Resources */,
+				64FFFF4918AA0BED00949E1E /* BodyFatMeasureViewController_iphone.xib in Resources */,
+				649C2D2B186BBBDF00797D00 /* AnalysisViewController.xib in Resources */,
+				64FFFF0918A8CD2E00949E1E /* ViewController.xib in Resources */,
+				64FFFF0518A8AEA800949E1E /* ChooseItemViewController_iphone.xib in Resources */,
+				64FFFF2618AA016200949E1E /* BloodPressAnalysisViewController_iphone.xib in Resources */,
+				64511692187BF57B00CA44E2 /* BodyFatMeasureViewController.xib in Resources */,
+				6428907718618BD80074AEBC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6428908B18618BD80074AEBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6428909918618BD80074AEBC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6428906518618BD80074AEBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64511680187BD1F000CA44E2 /* GlucoseMeasureViewController.m in Sources */,
+				64FFFF4818AA0BED00949E1E /* BodyFatMeasureViewController_iphone.m in Sources */,
+				649C2D2E186C001800797D00 /* BloodPressDataCell.m in Sources */,
+				64511691187BF57B00CA44E2 /* BodyFatMeasureViewController.m in Sources */,
+				649C2D54186C262300797D00 /* LegendView.m in Sources */,
+				642890A71861A0AB0074AEBC /* LoginViewController.m in Sources */,
+				642890B91862EEF10074AEBC /* MeasureViewController.m in Sources */,
+				64511696187C017A00CA44E2 /* BodyFatAnalysisViewController.m in Sources */,
+				649C2D4D186C262300797D00 /* UIImage+Additions.m in Sources */,
+				64FFFF4D18AA0C1400949E1E /* BodyFatAnalysisViewController_iphone.m in Sources */,
+				6451166E1876997300CA44E2 /* SVProgressHUD.m in Sources */,
+				64FFFF2F18AA099000949E1E /* GlucoseMeasureViewController_iphone.m in Sources */,
+				649C2D26186ACA0900797D00 /* ServerConnect.m in Sources */,
+				642890AB1861A2D40074AEBC /* ChooseItemViewController.m in Sources */,
+				649C2D53186C262300797D00 /* InfoView.m in Sources */,
+				649C2D4F186C262300797D00 /* FPTuple.m in Sources */,
+				64FFFF2518AA016200949E1E /* BloodPressAnalysisViewController_iphone.m in Sources */,
+				642890CB186439DD0074AEBC /* EADSessionController.m in Sources */,
+				649C2D25186ACA0900797D00 /* Regex.m in Sources */,
+				64FFFF3818AA09DF00949E1E /* GlucoseDataCell_iphone.m in Sources */,
+				64FFFF0418A8AEA800949E1E /* ChooseItemViewController_iphone.m in Sources */,
+				6428908618618BD80074AEBC /* ViewController.m in Sources */,
+				6428907D18618BD80074AEBC /* AppDelegate.m in Sources */,
+				64FFFEFC18A8AB9300949E1E /* BodyfatDataCell_iphone.m in Sources */,
+				64FFFF3418AA09BB00949E1E /* GlucoseAnalysisViewController_iphone.m in Sources */,
+				64511689187BDEB900CA44E2 /* GlucoseDataCell.m in Sources */,
+				649C2D50186C262300797D00 /* NSArray+FPAdditions.m in Sources */,
+				649C2D20186AC8A500797D00 /* MySingleton.m in Sources */,
+				649C2D4C186C262300797D00 /* UIColor+HelperAdditions.m in Sources */,
+				649C2D52186C262300797D00 /* LineChartView.m in Sources */,
+				64511685187BDD1E00CA44E2 /* GlucoseAnalysisViewController.m in Sources */,
+				649C2D4B186C262300797D00 /* InnerShadowDrawing.m in Sources */,
+				649C2DA01871691C00797D00 /* XmlTool.m in Sources */,
+				649C2DB41872AD0900797D00 /* EoceneServerConnect.m in Sources */,
+				649C2D1C186AC86100797D00 /* database.m in Sources */,
+				649C2D4E186C262300797D00 /* UIKit+DrawingHelpers.m in Sources */,
+				649C2D51186C262300797D00 /* NSDate+Additions.m in Sources */,
+				6451169B187CEE1A00CA44E2 /* BodyfatDataCell.m in Sources */,
+				649C2D2A186BBBDF00797D00 /* AnalysisViewController.m in Sources */,
+				64FFFF2018AA011F00949E1E /* BloodPressMeasureViewController_iphone.m in Sources */,
+				6428907918618BD80074AEBC /* main.m in Sources */,
+				64FFFF2918AA025200949E1E /* BloodPressDataCell_iphone.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6428908918618BD80074AEBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6428909B18618BD80074AEBC /* HMETests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6428909318618BD80074AEBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6428906818618BD80074AEBC /* HME */;
+			targetProxy = 6428909218618BD80074AEBC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6428907518618BD80074AEBC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6428907618618BD80074AEBC /* en */,
+				642890BB1863DB260074AEBC /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6428908118618BD80074AEBC /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6428908218618BD80074AEBC /* Base */,
+				642890BD1863DB260074AEBC /* zh-Hans */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		6428909718618BD80074AEBC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6428909818618BD80074AEBC /* en */,
+				642890BE1863DB260074AEBC /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		642890C31863DBCE0074AEBC /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				642890C41863DBD30074AEBC /* en */,
+				642890C51863DBD40074AEBC /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		64FFFF1818A9C5E800949E1E /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64FFFF1918A9C5E800949E1E /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6428909C18618BD80074AEBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6428909D18618BD80074AEBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6428909F18618BD80074AEBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HME/HME-Prefix.pch";
+				INFOPLIST_FILE = "HME/HME-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		642890A018618BD80074AEBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HME/HME-Prefix.pch";
+				INFOPLIST_FILE = "HME/HME-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		642890A218618BD80074AEBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HME.app/HME";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HME/HME-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "HMETests/HMETests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		642890A318618BD80074AEBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HME.app/HME";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HME/HME-Prefix.pch";
+				INFOPLIST_FILE = "HMETests/HMETests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6428906418618BD80074AEBC /* Build configuration list for PBXProject "HME" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6428909C18618BD80074AEBC /* Debug */,
+				6428909D18618BD80074AEBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6428909E18618BD80074AEBC /* Build configuration list for PBXNativeTarget "HME" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6428909F18618BD80074AEBC /* Debug */,
+				642890A018618BD80074AEBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		642890A118618BD80074AEBC /* Build configuration list for PBXNativeTarget "HMETests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				642890A218618BD80074AEBC /* Debug */,
+				642890A318618BD80074AEBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6428906118618BD80074AEBC /* Project object */;
+}
